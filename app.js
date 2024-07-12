@@ -75,7 +75,7 @@ const sessionOptions = {
   }
 };
 
-// app.get('/', (req, res) => res.send('Hello World!'));
+app.get('/', (req, res) => res.redirect("/listings"));
 
 // Using flash and sessions  ---> use flash and sessions before using routes
 app.use(session(sessionOptions));
